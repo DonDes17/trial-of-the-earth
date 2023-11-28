@@ -7,8 +7,11 @@ import Foundation
 let arguments: [String] = CommandLine.arguments
 
 
-for index in 1..<arguments.count {
-    let arg = arguments[index]
-    print(arg)
+if arguments.count <= 1 {
+    print("Aucun argument passé.")
+} else {
+    for index in 1..<arguments.count {
+        let arg = arguments[index]
+        print(arg)
+    }
 }
-
