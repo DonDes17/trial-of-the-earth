@@ -10,6 +10,6 @@ let currentFileName = currentFileURL.lastPathComponent
 if (currentFileName == "") {
     print("Nous n'avons pas reçu de niom de fichier")
 } else {
-    print("Le nom du fichier courant est : \(currentFileName)")
+    print(currentFileName)
 }
 
