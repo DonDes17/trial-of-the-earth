@@ -8,15 +8,15 @@ if CommandLine.arguments.count <= 1 {
     print("Aucun argument passé.")
 } else {
     let argument: String = CommandLine.arguments[1]
-    var distance: Int = 0
+    var position: Int = 0
     var restOfAlphabet: String = ""
     
     if let index = alpha.firstIndex(where: { $0.isLetter && $0.lowercased() == argument.lowercased() }) {
-        distance = alpha.distance(from: alpha.startIndex, to: index)
+            position = alpha.distance(from: alpha.startIndex, to: index)
     }
     
     for (index, letter) in alpha.enumerated() {
-        if index >= distance {
+        if index >= position {
             restOfAlphabet += String(letter)
         }
     }
