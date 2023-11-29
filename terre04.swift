@@ -5,7 +5,7 @@ import Foundation
 if CommandLine.arguments.count <= 1 {
     print("Je n'ai rien reçus !!")
 } else {
-    let arguments = CommandLine.arguments[1]
+    let arguments: String = CommandLine.arguments[1]
     if let number = Int(arguments) {
         if number % 2 == 0 {
             print("\(number) est pair")
